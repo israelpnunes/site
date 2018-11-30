@@ -1,0 +1,1295 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>TECHNOMONTE 2K18</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+
+<link href="logo_ico.ico" rel=icon>
+  
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-align: justify;
+      padding: 0 50px;
+  } 
+  h5 {
+      font-size: 17px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+  }   
+  .jumbotron {
+      /* background-color: #f4511e; */
+	  
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 40px;
+  }
+  
+  .container-fluid-2 {
+      padding: 0px 0px;
+  }
+  
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #171450;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 25 !important;
+      letter-spacing: 2px;
+      border-radius: 0;
+      font-family: Arial, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+	  /*margin: 09px;*/
+  }
+   
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #171450 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+/*cores primeira linha*/
+.teste th {
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+
+  background-color: #6c7ae0;
+}
+
+#home img {
+	width: 100%;
+	height: 100%;
+}
+#home2 img {
+	width: 20%;
+	height: 20%;
+}
+.fotoPalestrante {
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+.div1
+{
+	height: 150px;
+	width:450px;
+	background-color:#32CD32;
+}
+
+div.sticky {
+  /* position: -webkit-sticky;
+  position: sticky; */
+  top: 0;
+  min-width: 250px;
+  width: 49.6%;
+  float: left;
+  background-color: #32CD32;
+  border: 2px solid #32CD32;
+  margin-right: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+div.sticky img{
+    height: 70px;
+    width: 70px;
+}
+div.sticky2 {
+  background-color: #171450 !important;
+  border: 2px solid #171450 !important;
+}
+
+h6{
+	position: absolute;
+    left: 195px;
+    top: 30px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+
+}
+div.sticky h5{
+    left: 130px;
+    top: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+
+}
+.containerInscricoes {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.sticky3 {
+	float: left;
+	width: 100%;
+	left: 145px;
+	background-color: #18BDEB;
+	border: 2px solid #18BDEB;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+div.sticky3 .imagemEsquerda {
+	float: left;
+    height: 100%;
+}
+#maratona img{
+    left: 25px;
+    top: 30px;
+    width: 100%;
+
+}
+.maratona{
+    left: 420px;
+    top: 15px;
+    font-size: 25px;
+    font-family: Arial Black, sans-serif;
+    color: #171450;
+
+}
+.maratona_horario{
+    left: 525px;
+    top: 48px;
+    font-size: 18px;
+    font-family: Arial , sans-serif;
+    color: #171450;
+
+}
+
+.maratona_instrucoes{
+    left: 325px;
+    top: 90px;
+    font-size: 15px;
+    font-family: Arial , sans-serif;
+    color: #ffffff;
+
+}
+
+.maratona_premiacao {
+	color: #171450;
+	font-family: Arial Black, sans-serif;
+}
+div.sticky4 {
+	float: left;
+	width: 100%;
+	left: 145px;
+	background-color: #bdbebd;
+	border: 2px solid #bdbebd;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.campeonato_fifa{
+    left: 825px;
+    top: 65px;
+    font-size: 18px;
+    font-family: Arial , sans-serif;
+    color: #171450;
+
+}
+.fifa{
+    left: 420px;
+    top: 15px;
+    font-size: 25px;
+    font-family: Arial Black, sans-serif;
+    color: #171450;
+
+}
+.fifa_instrucoes{
+    left: 325px;
+    top: 90px;
+    font-size: 15px;
+    font-family: Arial , sans-serif;
+    color: #171450;
+
+}
+.logoRow {
+    padding-bottom: 50px;
+}
+
+.logos {
+	min-height: 350px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logos img {
+    width: 100%;
+	max-width: 600px;
+}
+
+  </style>
+  
+  <style>
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+</style>
+
+<script>
+$(function() {
+  
+  // Get the form fields and hidden div
+  var checkbox = $("#trigger");
+  var hidden = $("#hidden_fields");
+  var populate = $("#populate");
+  
+  // Hide the fields.
+  // Use JS to do this in case the user doesn't have JS 
+  // enabled.
+  hidden.hide();
+  
+  // Setup an event listener for when the state of the 
+  // checkbox changes.
+  checkbox.change(function() {
+    // Check to see if the checkbox is checked.
+    // If it is, show the fields and populate the input.
+    // If not, hide the fields.
+    if (checkbox.is(':checked')) {
+      // Show the hidden fields.
+      hidden.show();
+      // Populate the input.
+      populate.val("Dude, this input got populated!");
+    } else {
+      // Make sure that the hidden fields are indeed
+      // hidden.
+      hidden.hide();
+      
+      // You may also want to clear the value of the 
+      // hidden fields here. Just in case somebody 
+      // shows the fields, enters data to them and then 
+      // unticks the checkbox.
+      //
+      // This would do the job:
+      //
+      // $("#hidden_field").val("");
+    }
+  });
+});
+</script>
+
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+     <a class="navbar-brand" href="#myPage"><img src="img/TM - Logo para Fundo Escuro.png" width="48" height="35" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#evento">O EVENTO</a></li>
+        <li><a href="#inscricao">INSCRIÇÕES</a></li>
+        <li><a href="#agenda">PROGRAMAÇÃO</a></li>
+        <li><a href="#palestrantes">PALESTRANTES</a></li>
+        <!--<li><a href="#pricing">SUBMISSÃO</a></li> -->
+		<li><a href="#contatos">CONTATO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="home" class="container-fluid-2">
+<img src="img/SITEbanner960.png">
+</div>
+
+<!-- Container (About Section) -->
+
+
+<!--<div id="intro" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div> -->
+
+    <!--<div class="col-sm-12">
+      <h3>O EVENTO</h3><br>
+
+      <p>Proporcionar aos estudantes dos cursos relacionados à Tecnologia da Informação das instituições UFU (Campus Monte
+Carmelo) e FUCAMP um momento de atualização de conhecimento técnico e cientíco da área de computação bem
+como um ambiente de integração de ensino, pesquisa e extensão de projetos executados no âmbito das duas
+instituições de ensino da cidade, além da criação de networking entre estudantes, professores, pesquisadores e a
+comunidade.</p>
+    </div> -->
+
+<div class="container-fluid" id="evento">
+  <div class="row text-center">
+    
+  <b><h2>O EVENTO <br> </h2></b>
+    <h4>TECHNOMONTE é um evento cujo objetivo é trazer para a comunidade deTecnologia da Informação (TI) da cidade de Monte Carmelo/MG - alunos da 
+UFU-Monte Carmelo (Sistemas de Informação), da FUCAMP (Sistemas para Internet) e profissionais da área e região - uma oportunidade para atualização de conhecimento técnico e científico da área de computação, bem como um ambiente de integração de ensino, pesquisa e extensão de projetos executados no âmbito das duas instituições de ensino da cidade, além da criação de networking entre estudantes, professores, pesquisadores e a comunidade.
+     
+	
+	</h4>
+
+ <div style="width:100%;border-top:2px solid #dcdcdc"><br></div>
+ </div>
+</div>
+
+<div id="inscricao" class="container-fluid containerInscricoes">
+<!--<a href="inscricao.html" target="_blank">-->
+    <div id="andar_imagem" class="sticky" align="center"> <img src="site2/img/inscricoes2.png" >
+		  	<h5><font color="white">INSCRIÇÕES
+  	  <p>A PARTIR DE 03/09/18</p></font></h5>
+      
+      <div class="w3-container">
+  
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-white w3-border w3-round-large">DESEJO ME INSCREVER</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <!--<img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top"> -->
+        <h3>Ficha de inscrição</h3>
+      </div>
+
+      <form class="w3-container" action="processa_inscricao.php">
+        <div class="w3-section">
+        
+          <label class="w3-left"><b>Nome</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Insira seu nome" name="nome" required>
+          
+          <label class="w3-left"><b>CPF</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Insira seu CPF" name="cpf" maxlength="11" required>
+          
+          <label class="w3-left"><b>Endereço</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Insira seu endereço" name="endereco" required>
+          
+          <label class="w3-left"><b>Cidade</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Insira sua cidade" name="cidade" required>
+          
+          <label class="w3-left"><b>Estado</b></label>
+          
+          <select class="w3-select w3-border" name="option">
+    <option value="" disabled selected>Escolha seu estado</option>
+    <option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+  </select>
+  <br><br>
+  
+  <label class="w3-left"><b>Celular</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Insira seu celular" name="celular" required>
+  
+  <div class="w3-left">
+      Possui Whatsapp? <input type="checkbox" id="trigger" name="question" class="w3-check">
+    </div>
+    
+    <div id="hidden_fields">
+      <input type="text" id="hidden_field" name="hidden" class="w3-input w3-border" placeholder="Insira seu número de Whatsapp" name="whatsapp">
+    </div>
+   
+   <br>
+<br>
+<br>
+
+  
+  <div class="w3-cell-row">
+  <div class="w3-container w3-cell w3-cell-top w3-panel w3-border-right" style="width:45%">
+    <label><b>Minicursos</b></label><br>
+
+
+  <input class="w3-radio" type="radio" name="minicurso" value="1">
+  <label>Minicurso 1</label>
+
+ <input class="w3-radio" type="radio" name="minicurso" value="2">
+  <label>Minicurso 2</label><br>
+
+  <input class="w3-radio" type="radio" name="minicurso" value="3">
+  <label>Minicurso 3</label>
+
+ <input class="w3-radio" type="radio" name="minicurso" value="4">
+  <label>Minicurso 4</label>
+  </div>
+  
+  <div class="w3-container w3-cell w3-cell-top w3-panel" style="width:55%">
+    <label><b>Oficinas</b></label><br>
+  
+  <input class="w3-check" type="checkbox">
+  <label>Oficina 1</label>
+
+
+  <input class="w3-check" type="checkbox">
+  <label> Oficina 2</label>
+
+
+  <input class="w3-check" type="checkbox">
+  <label> Oficina 3</label>
+  </div>
+  
+</div>
+ 
+          <!--<label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required> -->
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Gravar dados</button>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="reset">Recomeçar</button>
+          
+          <!--<input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me -->
+        </div>
+      </form>
+
+      <!--<div class="w3-container w3-border-top w3-padding-16 w3-light-grey"> -->
+        <!--<button type="button" class="w3-button w3-red">Cancel</button> -->
+        <!--<span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span> -->
+      <!--</div> -->
+
+    </div>
+  </div>
+</div>
+      
+	</div>
+	<!--<a href="submissao.html" target="_blank">-->
+	<div id="andar_imagem2" align="center" class="sticky sticky2"> <img src="site2/img/submissoes2.png" >
+		  	<h5><font color="white">SUBMISSÕES DE TRABALHOS
+  	  <p>03/09/18 a 12/09/18</p></font></h5>
+      
+      <div class="w3-container">
+ 
+  <button onclick="myFunction()" class="w3-btn w3-white w3-border w3-round-large">DESEJO SUBMETER</button>
+<script>
+function myFunction() {
+    var myWindow = window.open("", "", "width=640,height=480");
+}
+</script>
+ 
+</div>
+      
+	</div>
+	<br/>
+	<div id="maratona" class="sticky3"> 
+		<div class="imagemEsquerda">
+			<img src="img/programacao.png" >
+		</div>
+		<div>
+		  	<div class="maratona" align="center">MARATONA DE PROGRAMAÇÃO</div>
+		  	<div class="maratona_horario" align="center"> 04/10, das 08h00 às 09h00 (aquecimento) <br/> 
+		  	04/10, das 09h00 às 12h00 (competição)</div>
+		  	<div class="maratona_instrucoes"> - As inscrições são individuais;<br>
+- As soluções devem ser escritas em uma das linguagens de programação: C/C++ e Java;<br>
+- As inscrições podem ser feitas até o dia 02/10;<br>
+- Todos os competidores deverão ser estudantes (comprovante deverá ser apresentado no dia da maratona);<br>
+- Será permitido o uso de material impresso durante a maratona para consulta;
+			</div>
+			<div class="maratona_premiacao" align="center">Haverá premiação!!!</div>
+		</div> 	
+	</div>
+	<br>
+
+	<div id="maratona" class="sticky4"> 
+		<div>
+		  	<div class="fifa" align="center">CAMPEONATO DE FIFA 2018</div>
+		  	<div class="campeonato_fifa" align="center"> Fase preliminar: 01/10 às 20h30 no Laboratório de Sistemas para Internet 
+FUCAMP<br/> Semifinais e finais: 04/10 às 20h30 no Espaço de Convivência do 
+Estudante FUCAMP</div>
+		  		 <div class="campeonato_fifa">REGRAS:</div>
+		  		 <div class="fifa_instrucoes">
+- Todos os participantes deverão estar inscritos no evento TechnoMonte 2018.<br>
+- O torneio terá no máximo 32 participantes, a serem selecionados por ordem de inscrição.<br>
+- Cada participante deverá levar seu próprio joystick a ser utilizado durante as partidas.<br>
+- O torneio terá duas chaves, com 16 integrantes cada, sendo todos os jogos eliminatórios. Um sorteio para definição das chaves será realizado 
+momentos antes de iniciar o campeonato.<br>
+- Cada participante poderá escolher um time por rodada, o time escolhido pelo participe terá que ser participante de uma liga oficial cadastrado 
+pela FIFA, não possuindo nenhuma edição ou alteração de jogadores ou habilidades.<br>
+- Em caso de preferência de times iguais em uma mesma partida, o participante que for sorteado primeiro terá prioridade na escolha do time, não serão permitidas partidas com times iguais.<br>
+- As partidas terão dois tempos de 5 minutos, 10 minutos no total. Em caso de empate a partida será decidida nos pênaltis, sem prorrogação.<br>
+- Cada participante poderá fazer três substituições por partidas e poderá fazer no máximo duas paradas para alterar o time, cada parada poderá ter no máximo 30 segundos. O participante só pode parar o jogo quando tiver a posse da bola, parar o jogo enquanto a bola estiver em domínio de seu adversário causará a eliminação instantânea do participante.<br>
+
+
+			</div>
+			<div class="maratona_premiacao" align="center">Haverá premiação!!!</div>
+		</div> 	
+
+  </div>
+
+ 
+  
+
+
+
+<!--<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div> -->
+
+</div>
+
+<!-- Container (Services Section) -->
+<div id="agenda" class="container-fluid text-center">
+
+  
+  <div class="tab-content">
+    <!--<div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div> -->
+    <img src="img/icone-programacao.png" width="59" height="61" href="#pricing">
+    <b><h2>Programação Completa</h2></b><br>
+      <table class="table table-hover">
+
+	<tr align="center">
+   
+    <td colspan="3"  BGCOLOR=#171450><b><font color = "white" size = "4"> 02/10/2018 - Terça-feira</font><b></td>
+   
+  </tr>
+  <tr>
+    <td width="20%">19h00</td>
+    <td width="50%" class="text-left"><b>Credenciamento</td>
+    <td width="30%" class="text-left">Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>19h30</td>
+    <td class="text-left"><b>Abertura do evento</td>
+    <td class="text-left">Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td class="text-left"><b>Palestra: "Paradoxo da Inovação e a Arte do mimimi"</b>
+<br>Anna Paula Graboski - CEO DA LANDIX</td>
+    <td class="text-left">Anfiteatro FUCAMP</td>
+  </tr>
+</table>
+    
+   
+      
+      <table class="table table-hover">
+<tr align="center">
+    
+    <td colspan="3" BGCOLOR=#171450><b><font color = "white" size = "4"> 03/10/2018 - Quarta-feira</font><b></td>
+    
+  </tr>
+  <tr>
+  <tr>
+    <td width="20%">08h30 - 11h30<br>
+      13h00 - 16h00</td>
+    <td width="50%" class="text-left"><b>Minicurso: Python</b><br>
+Instrutor: Adilmar Coelho Dantas</td>
+    <td width="30%" class="text-left">Laboratórios BSI (Bloco B, 1º andar)<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>08h30 - 11h30<br>
+13h00 - 16h00</td>
+    <td class="text-left"><b>Minicurso: Turbinando o Desenvolvimento Android com Kotlin</b><br>
+Instrutor: Vitor César de Carvalho</td>
+    <td class="text-left">Laboratórios BSI (Bloco B, 1º andar)<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>08h30 - 11h30<br>
+13h00 - 16h00</td>
+    <td class="text-left"><b>Minicurso: LaTeX: um pontapé inicial para uma boa formatação
+de texto </b><br> Instrutores: Eduardo Rogério Fávaro e Edmilson Paulo De Oliveira</td>
+    <td class="text-left">Laboratórios BSI (Bloco B, 1º andar)<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>19h00</td>
+    <td class="text-left"><b>Palestra: "(In)segurança do voto eletrônico no Brasil,
+5 anos depois" </b><br> Diego F. Aranha
+Prof. Assistente University of Aarhus, Dinamarca</td>
+    <td class="text-left">Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td class="text-left"><b>Palestra: "A definir"</b><br>
+Régis Damásio Salles - Superintendente (MonteCCer)</td>
+    <td class="text-left">Anfiteatro FUCAMP</td>
+  </tr>
+</table>
+    
+    
+     
+      <table class="table table-hover">
+<tr align="center">
+    
+    <td colspan="3" BGCOLOR=#171450><b><font color = "white" size = "4"> 04/10/2018 - Quinta-feira</font><b></td>
+    
+  </tr>
+  <tr>
+  <tr>
+    <td width="20%">08h30</td>
+    <td width="50%" class="text-left"><b>Aquecimento Maratona de Programação</b></td>
+    <td width="30%" class="text-left">Laboratórios BSI (Bloco B, 1º andar)<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>09h00 - 12h00</td>
+    <td class="text-left"><b>Maratona de Programação</b></td>
+    <td class="text-left">Laboratórios BSI (Bloco B, 1º andar)<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>13h30</td>
+    <td class="text-left"><b>Oficina: “Pós-Graduação: o que esperar e como se preparar?”</b>
+<br >Murillo Carneiro - Professor UFU</td>
+    <td class="text-left">Sala a definir<br>
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>14h30</td>
+    <td class="text-left"><b>Oficina: “Você está preparado(a) para o mercado de T.I.?”</b>
+<br>Aline Freitas e Luciane Silva - NEPPO</td>
+    <td class="text-left">FUCAMP</td>
+  </tr>
+  <tr>
+    <td>19h00</td>
+    <td class="text-left"><b>Mostra de Trabalhos de Iniciação Científica,
+Conclusão de Curso e Projetos em Desenvolvimento</b></td>
+    <td class="text-left">Espaço de Convivência do Estudante FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td class="text-left"><b>Semifinais e Final do Campeonado FIFA 2018</b></td>
+    <td class="text-left">Espaço de Convivência do Estudante FUCAMP</td>
+
+  </tr>
+  <tr>
+    <td>21h15</td>
+    <td class="text-left"><b>Premiações e Encerramento</b></td>
+    <td class="text-left">Espaço de Convivência do Estudante FUCAMP</td>
+  </tr>
+</table>
+    
+  </div>
+</div>
+  
+  <!--<table class="table table-hover">
+<tr>
+    <td colspan="3" class="text-center">02/10/2018 Terça-feira</td>
+  </tr>
+  <tr>
+    <td width="35">19h00</td>
+    <td width="45%">Credenciamento</td>
+    <td width="20%">Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>19h30</td>
+    <td>Abertura do evento</td>
+    <td>Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td>Palestra: "Paradoxo da Inovação e a Arte do mimimi"
+Anna Paula Graboski - CEO DA LANDIX</td>
+    <td>Anfiteatro FUCAMP</td>
+  </tr>
+</table>
+
+<br />
+<br />
+
+<table class="table table-hover">
+<tr>
+    <td colspan="3" class="text-center">03/10/2018 Quarta-feira</td>
+  </tr>
+  <tr>
+    <td width="35%">08h30 - 11h30<br>
+      13h00 - 16h00</td>
+    <td width="45%">Minicurso: Python
+Adilmar Coelho Dantas</td>
+    <td width="20%">Laboratórios BSI (Bloco B, 1º andar)
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>08h30 - 11h30<br>
+13h00 - 16h00</td>
+    <td>Minicurso: Turbinando o Desenvolvimento Android com Kotlin
+Vitor César de Carvalho</td>
+    <td>Laboratórios BSI (Bloco B, 1º andar)
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>08h30 - 11h30<br>
+13h00 - 16h00</td>
+    <td>Minicurso: LaTeX: um pontapé inicial para uma boa formatação
+de texto - Eduardo Rogério Fávaro e Edmilson Paulo De Oliveira</td>
+    <td>Laboratórios BSI (Bloco B, 1º andar)
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>19h00</td>
+    <td>Palestra: "(In)segurança do voto eletrônico no Brasil,
+5 anos depois" - Diego F. Aranha
+PROF. ASSISTENTE UNIV. DE AARHUS, DINAMARCA</td>
+    <td>Anfiteatro FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td>Palestra: "A denir"
+Régis Damásio Salles - SUPERINTENDENTE (MONTECCER)</td>
+    <td>Anfiteatro FUCAMP</td>
+  </tr>
+</table>
+
+<br />
+<br />
+
+<table class="table table-hover">
+<tr>
+    <td colspan="3" class="text-center">04/10/2018 Quinta-feira</td>
+  </tr>
+  <tr>
+    <td width="35%">08h30</td>
+    <td width="45%">Aquecimento Maratona de Programação</td>
+    <td width="20%">Laboratórios BSI (Bloco B, 1º andar)
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>09h00 - 12h00</td>
+    <td>Maratona de Programação</td>
+    <td>Laboratórios BSI (Bloco B, 1º andar)
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>13h30</td>
+    <td>Oficina: “Pós-Graduação: o que esperar e como se preparar?”
+Murillo Carneiro - Professor UFU</td>
+    <td>Sala A denir
+Campus Araras UFU</td>
+  </tr>
+  <tr>
+    <td>14h30</td>
+    <td>Oficina: “Você está preparado(a) para o mercado de T.I.?”
+Aline Freitas e Luciane Silva - NEPPO</td>
+    <td>FUCAMP</td>
+  </tr>
+  <tr>
+    <td>19h00</td>
+    <td>Mostra de Trabalhos de Iniciação Cientíca,
+Conclusão de Curso e Projetos em Desenvolvimento</td>
+    <td>FUCAMP</td>
+  </tr>
+  <tr>
+    <td>20h30</td>
+    <td>Premiações e Encerramento</td>
+    <td>FUCAMP</td>
+  </tr>
+</table>
+
+<br>
+<br> -->
+
+
+  
+
+<!-- Container (Portfolio Section) -->
+<div id="palestrantes" class="container-fluid text-center bg-grey">
+  <h2>PALESTRANTES</h2>
+  <br>
+  <!--<h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br> -->
+  
+ <!-- <h2>CONHEÇA NOSSOS PALESTRANTES</h2> -->
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div id="home2" class="container-fluid-2">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+      <div><img src="palestrantes/anna.png" class="fotoPalestrante" width="160" height="160"></div>
+      <b><h3>Anna Paula Graboski</h3></b>
+<!--<h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4> -->
+<div>CEO da Landix, fundadora da aceleradora Capim e embaixadora da SingularityU Chapter Uberlândia. Formada em Administração de Empresas pela FAGEN/UFU, alumni e embaixadora da Singularity University do Chapter de Uberlândia, Fundadora da Capim e CEO da Landix, empresa focada em mobilidade corporativa, com atuação no Brasil e em expansão internacional. Nerd com muito orgulho, acredita que o futuro será incrível devido à economia compartilhada, reconexão com a natureza, conhecimento, tecnologia e modelos de negócio disruptivos.</div><br>
+<br><br>
+      </div>
+      
+      <div class="item">
+      <div><img src="palestrantes/diego.png" class="fotoPalestrante" width="160" height="160"></div>
+      <b><h3>Diego F. Aranha</h3></b>
+        <!--<h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4> -->
+        <div> Professor Assistente na Universidade de Aarhus, Dinamarca, desde 2018. Tem experiência na área de Criptografia e Segurança Computacional, com ênfase em implementação eficiente de algoritmos criptográficos e análise de segurança de sistemas reais. Coordenou a primeira equipe de investigadores independentes capaz de detectar e explorar vulnerabilidades no software da urna eletrônica em testes controlados organizados pelo Tribunal Superior Eleitoral. É Bacharel em Ciência da Computação pela Universidade de Brasília (2005), Mestre (2007) e Doutor (2011) em Ciência da Computação pela Universidade Estadual de Campinas. Foi doutorando visitante por 1 ano na Universidade de Waterloo, Canadá, Professor Adjunto por pouco mais de 2 anos no Departamento de Ciência da Computação da Universidade de Brasília e Professor Doutor MS 3.1 por 4 anos na Universidade Estadual de Campinas. Recebeu em 2015 o prêmio Inovadores com Menos de 35 Anos Brasil da MIT Technology Review por seu trabalho com o voto eletrônico e Google Latin America Research Award para pesquisa em privacidade em 2015 e 2016.</div><br><br><br>
+
+      </div>
+      
+      <div class="item">
+      <div><img src="palestrantes/perfil.png" width="115" height="115"></div>
+       
+       <h3>Régis D. Salles</h3>
+       <div>Superintendente da Cooperativa dos Cafeicultores do Cerrado de Monte Carmelo (MonteCCer).</div><br><br><br>
+
+      </div>
+    </div>
+    </div>
+    
+
+    <!-- Left and right controls -->
+    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+</div>
+<div id="logo" class="container-fluid-2 logoRow">
+  <div class="row" align = "center">
+    <div class="col-sm-6 logos"><img src="img/realizacao2.png" ></div>
+    <div class="col-sm-6 logos"><img src="img/apoio.png"></div>
+  </div>
+  </div>
+
+
+<!-- Container (Pricing Section) -->
+<!--<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>-->
+
+<!-- Container (Contact Section) -->
+<!--<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<!--<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+-->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+</style>
+
+<footer class="container-fluid text-center " style="background-color: #171450;">
+
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div id="contatos">
+  <h3><p>CONTATOS</p></h3>
+  <p>Endereços:<br>
+FUCAMP - <a href="https://www.google.com.br/maps/place/Fucamp+-+Monte+Carmelo/@-18.7376963,-47.5151771,15z/data=!4m5!3m4!1s0x0:0xa035303f8b80ff8d!8m2!3d-18.7376963!4d-47.5151771" target=“_blank”>Av. Brasil Oeste, s/n - Jardim Zenith II, Monte Carmelo - MG</a>
+<br>UFU CAMPUS ARARAS - MONTE CARMELO - <a href="https://www.google.com.br/maps/place/UFU+-+Unidade+Araras/@-18.7238275,-47.5262734,17z/data=!3m1!4b1!4m5!3m4!1s0x94a588cdb71f3513:0x49e70536bad58c20!8m2!3d-18.7238275!4d-47.5240847" target=“_blank”> km 1, LMG-746, Monte Carmelo - MG</a>
+<br>Email:<a href="mailto:contato@technomonte.com.br" target="_top"> contato@technomonte.com.br</a> </p>
+ 
+  
+		<a href="https://www.facebook.com/technomonte" class="fa fa-facebook" target=“_blank”></a>
+        <a href="https://www.instagram.com/technomonte/?hl=pt-br" class="fa fa-instagram" target=“_blank” ></a></center><br><br><br></div>
+		 <p>Bootstrap Theme Made By <a href="https://www.w3schools.com"  title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
